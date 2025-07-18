@@ -7,6 +7,15 @@
             "rol": "user",
             "skills": [],
             "experience": []
+        },
+        {
+            "name": "Company1",
+            "email": "company@1",
+            "password": "111",
+            "rol": "company",
+            "logo": "",
+            "field": "",
+            "description": ""
         }
     ],
     "jobs": [

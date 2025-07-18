@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "name": "J",
+            "email": "j@j",
+            "password": "12",
+            "rol": "user",
+            "skills": [],
+            "experience": []
+        }
+    ],
+    "jobs": [
+
+    ]
+}

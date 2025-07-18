@@ -6,3 +6,6 @@ document.addEventListener("DOMContentLoaded", loadPage)
 document.getElementById("loginForm").addEventListener("submit", login)
 
 document.getElementById("openLogin").addEventListener("click", openLogin)
+
+
+

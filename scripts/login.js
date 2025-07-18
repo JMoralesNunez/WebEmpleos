@@ -59,7 +59,7 @@ export function openLogin() {
     dashboard.classList.add("d-none")
 }
 
-function closeLogin() {
+export function closeLogin() {
     loginContent.classList.add("d-none")
     dashboard.classList.remove("d-none")
 }

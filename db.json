@@ -1,24 +1,42 @@
 {
-    "users": [
-        {
-            "name": "J",
-            "email": "j@j",
-            "password": "12",
-            "rol": "user",
-            "skills": [],
-            "experience": []
-        },
-        {
-            "name": "Company1",
-            "email": "company@1",
-            "password": "111",
-            "rol": "company",
-            "logo": "",
-            "field": "",
-            "description": ""
-        }
-    ],
-    "jobs": [
-
-    ]
+  "users": [
+    {
+      "name": "J",
+      "email": "j@j",
+      "password": "12",
+      "rol": "user",
+      "skills": [],
+      "experience": [],
+      "id": "5871"
+    },
+    {
+      "name": "Company1",
+      "email": "company@1",
+      "password": "111",
+      "rol": "company",
+      "logo": "",
+      "field": "",
+      "description": "",
+      "id": "f661"
+    },
+    {
+      "id": "436e",
+      "name": "q",
+      "email": "q@q",
+      "password": "222",
+      "rol": "user",
+      "skills": [],
+      "experience": []
+    },
+    {
+      "id": "4901",
+      "name": "a",
+      "email": "a@a",
+      "password": "333",
+      "rol": "user",
+      "skills": [],
+      "experience": []
+    }
+  ],
+  "jobs": []
 }

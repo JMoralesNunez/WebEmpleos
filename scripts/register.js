@@ -2,7 +2,8 @@ import { USER_API } from "./apiurls.js";
 import { loadPage } from "./viewLoaders.js";
 
 document.getElementById("registerForm").addEventListener("submit", register)
-
+const registerContent = document.getElementById("registerContent");
+const dashboard = document.getElementById("dashboard");
 
 export async function register(e) {
     e.preventDefault();
@@ -36,7 +37,9 @@ export async function register(e) {
                     const user = await res.json()
                     localStorage.setItem("auth", "true")
                     localStorage.setItem("userInfo", JSON.stringify({ id: user.id, name: user.name }))
-                    localStorage.setItem("userType", "user")
+                    localStorage.setItem("userType", "user");
+                    closeRegister()
+                    loadPage()
                 } else if (rol == "company") {
                     const res = await fetch(USER_API, {
                         "method": "POST",
@@ -56,7 +59,9 @@ export async function register(e) {
                     const user = await res.json()
                     localStorage.setItem("auth", "true")
                     localStorage.setItem("userInfo", JSON.stringify({ id: user.id, name: user.name }))
-                    localStorage.setItem("userType", "company")
+                    localStorage.setItem("userType", "company");
+                    closeRegister()
+                    loadPage()
                 }
             }
         } catch (error) {
@@ -67,8 +72,21 @@ export async function register(e) {
 }
 
 function openRegister() {
-    const registerContent = document.getElementById("registerContent")
-    const dashboard = document.getElementById("dashboard");
-    registerContent.classList.remove("d-none")
-    dashboard.classList.add("d-none")
+    document.getElementById("fullName").value = "";
+    document.getElementById("emailInput").value = "";
+    document.getElementById("passwordInput").value = "";
+    const loginContent = document.getElementById("loginContent");
+    registerContent.classList.remove("d-none");
+    dashboard.classList.add("d-none");
+    loginContent.classList.add("d-none");
+}
+
+function closeRegister() {
+    registerContent.classList.add("d-none")
+    dashboard.classList.remove("d-none")
+}
+
+export const registerView = {
+    openRegister,
+    closeRegister
 }

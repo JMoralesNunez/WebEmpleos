@@ -3,9 +3,9 @@ import { logout } from "./login.js";
 export function loadPage() {
     const isAuth = localStorage.getItem("auth");
     const userType = localStorage.getItem("userType")
-    if (isAuth != "true") {
-        return
-    } else if (isAuth == "true" && userType == "user") {        
+    if (isAuth != "true") return
+
+    if (isAuth == "true" && userType == "user") {        
         const navBar = document.querySelector(".navbar-nav");
         const userID = localStorage.getItem("userInfo").id
         navBar.innerHTML = `<li class="nav-item">
@@ -41,4 +41,5 @@ export function loadPage() {
                                 loadPage()
                             });
     }
+    document.getElementById("logoutBtn").addEventListener("click", logout);
 }

@@ -3,6 +3,7 @@ import { loadPage } from "./viewLoaders.js";
 
 document.getElementById("registerForm").addEventListener("submit", register)
 
+
 export async function register(e) {
     e.preventDefault();
     const name = document.getElementById("fullName").value
@@ -63,4 +64,11 @@ export async function register(e) {
             alert("Error al registrar el usuario. Inténtalo de nuevo más tarde.");
         }
     }
+}
+
+function openRegister() {
+    const registerContent = document.getElementById("registerContent")
+    const dashboard = document.getElementById("dashboard");
+    registerContent.classList.remove("d-none")
+    dashboard.classList.add("d-none")
 }

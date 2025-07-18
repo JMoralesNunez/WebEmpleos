@@ -37,22 +37,25 @@ export async function login(e) {
 }
 
 export function logout() {
-    if (confirm("¿Quieres cerrar tu sesión actual?")) {
-        localStorage.removeItem("auth")
-        localStorage.removeItem("userInfo")
-        localStorage.removeItem("userType")
-        const navBar = document.querySelector(".navbar-nav");
-        navBar.innerHTML = `<li class="nav-item">
+    localStorage.removeItem("auth")
+    localStorage.removeItem("userInfo")
+    localStorage.removeItem("userType")
+    document.getElementById("dashboard").classList.remove("d-none");
+    document.getElementById("loginContent").classList.add("d-none");
+    const navBar = document.querySelector(".navbar-nav");
+    navBar.innerHTML = `<li class="nav-item">
                             <button id="openLogin" class="btn btn-dark" aria-current="page">Login</button>
                         </li>
                         <li class="nav-item">
                             <button class="btn btn-success" aria-current="page">Regístrate</button>
                         </li>`
-    }
 }
 
 export function openLogin() {
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
     loginContent.classList.remove("d-none")
+    document.getElementById("registerContent").classList.add("d-none");
     dashboard.classList.add("d-none")
 }
 

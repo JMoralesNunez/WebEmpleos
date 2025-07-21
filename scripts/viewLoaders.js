@@ -9,7 +9,7 @@ export function loadPage() {
         const navBar = document.querySelector(".navbar-nav");
         const userID = localStorage.getItem("userInfo").id
         navBar.innerHTML = `<li class="nav-item">
-                                <button onclick="showProfile(${userID})" class="btn">Perfil</button>
+                                <button id="showProfileBtn" class="btn">Perfil</button>
                             </li>
                             <li class="nav-item">
                                 <button onclick="showApplication(${userID})" class="btn">Mis Aplicaciones</button>
@@ -25,7 +25,7 @@ export function loadPage() {
         const navBar = document.querySelector(".navbar-nav");
         const userID = localStorage.getItem("userInfo").id
         navBar.innerHTML = `<li class="nav-item">
-                                <button onclick="showProfile(${userID})" class="btn">Perfil</button>
+                                <button id="showProfileBtn" class="btn">Perfil</button>
                             </li>
                             <li class="nav-item">
                                 <button onclick="showJobOffers(${userID})" class="btn">Publicar oferta</button>

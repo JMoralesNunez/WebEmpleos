@@ -47,7 +47,7 @@ export function logout() {
                             <button id="openLogin" class="btn btn-dark" aria-current="page">Login</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-success" aria-current="page">Regístrate</button>
+                            <button id="openRegister" class="btn btn-success" aria-current="page">Regístrate</button>
                         </li>`
 }
 

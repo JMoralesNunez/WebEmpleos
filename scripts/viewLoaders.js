@@ -28,7 +28,10 @@ export function loadPage() {
                                 <button id="showProfileBtn" class="btn">Perfil</button>
                             </li>
                             <li class="nav-item">
-                                <button onclick="showJobOffers(${userID})" class="btn">Publicar oferta</button>
+                                <button id="addJobOfferBtn"" class="btn">Publicar oferta</button>
+                            </li>
+                            <li class="nav-item">
+                                <button onclick="showJobOffers(${userID})" class="btn">Mis ofertas</button>
                             </li>
                             <li class="nav-item">
                                 <button onclick="showApplicants(${userID})" class="btn">Postulantes</button>

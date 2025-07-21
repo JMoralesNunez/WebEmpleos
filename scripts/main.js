@@ -2,10 +2,15 @@ import { login, logout, openLogin, closeLogin} from "./login.js";
 import { register, registerView } from "./register.js";
 import { loadPage } from "./viewLoaders.js";
 import { showProfile } from "./profile.js";
+import { openJobForm, setupJobForm} from "./companyActions/jobPost.js";
 
 
 
-document.addEventListener("DOMContentLoaded", loadPage)
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadPage();
+    setupJobForm(); 
+});
 
 document.getElementById("loginForm").addEventListener("submit", login)
 
@@ -19,6 +24,7 @@ document.querySelector(".navbar-nav").addEventListener("click", (e) => {
     if (e.target.matches("#logoutBtn")) logout();
     if (e.target.matches("#openRegister")) registerView.openRegister();
     if (e.target.matches("#showProfileBtn")) showProfile();
+    if (e.target.matches("#addJobOfferBtn")) openJobForm();
 });
 
 document.getElementById("cancelBtn").addEventListener("click", closeLogin)

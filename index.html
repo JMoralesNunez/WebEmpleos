@@ -159,6 +159,40 @@
         </form>
     </div>
 
+    <div id="jobPostContent" class="container p-4 d-none">
+        <h2 class="mb-4">Publicar nueva oferta</h2>
+        <form id="jobPostForm">
+            <div class="mb-3">
+                <label for="jobTitleInput" class="form-label">Título</label>
+                <input type="text" id="jobTitleInput" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="jobDescriptionInput" class="form-label">Descripción</label>
+                <textarea id="jobDescriptionInput" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="jobRequisitesInput" class="form-label">Requisitos</label>
+                <textarea id="jobRequisitesInput" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="jobSalaryInput" class="form-label">Salario (opcional)</label>
+                <input type="number" id="jobSalaryInput" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="jobModeInput" class="form-label">Modalidad</label>
+                <select id="jobModeInput" class="form-select" required>
+                    <option value="">Selecciona una modalidad</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="hibrido">Híbrido</option>
+                    <option value="remoto">Remoto</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Publicar</button>
+            <button type="button" id="cancelJobPostBtn" class="btn btn-secondary ms-2">Cancelar</button>
+        </form>
+    </div>
+
+
     <script type="module" src="./scripts/main.js"></script>
 </body>
 

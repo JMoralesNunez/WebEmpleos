@@ -5,8 +5,17 @@
       "email": "j@j",
       "password": "12",
       "rol": "user",
-      "skills": [],
-      "experience": [],
+      "skills": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "SQL",
+        "Inglés"
+      ],
+      "experience": [
+        "Agente bilingue",
+        "etc"
+      ],
       "id": "5871"
     },
     {
@@ -14,9 +23,10 @@
       "email": "company@1",
       "password": "111",
       "rol": "company",
-      "logo": "",
-      "field": "",
-      "description": "",
+      "logo": "https://www.vhv.rs/dpng/d/486-4864616_generic-company-logo-png-example-logo-png-transparent.png",
+      "field": "Logística",
+      "description": "Ejemplo descripción de empresa",
+      "jobOffers": [],
       "id": "f661"
     },
     {
@@ -36,7 +46,19 @@
       "rol": "user",
       "skills": [],
       "experience": []
+    },
+    {
+      "name": "w",
+      "email": "w@w",
+      "password": "333",
+      "rol": "company",
+      "logo": "https://e7.pngegg.com/pngimages/92/187/png-clipart-logo-company-business-creative-company-logo-free-logo-design-template-company.png",
+      "field": "Eventos",
+      "description": "Descripción empresa 2",
+      "jobOffers": [],
+      "id": "3c96"
     }
   ],
-  "jobs": []
+  "jobs": [
+  ]
 }

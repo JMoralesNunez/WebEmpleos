@@ -40,6 +40,7 @@ export async function showProfile() {
             name: document.getElementById("profileName").value,
             email: document.getElementById("profileEmail").value,
             password: document.getElementById("profilePassword").value,
+            rol : userType,
         };
 
         if (userType === "user") {

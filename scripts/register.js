@@ -53,7 +53,8 @@ export async function register(e) {
                             "rol": rol,
                             "logo": "",
                             "field": "",
-                            "description": ""
+                            "description": "",
+                            "jobOffers": []
                         })
                     })
                     const user = await res.json()
